@@ -33,9 +33,7 @@ body {
 }
 
 
-#frontText {
-    text-align: center;
-}
+#frontText {}
 
 .overlay {
     height: 100vh;
