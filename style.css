@@ -52,7 +52,7 @@ body {
 }
 
 a:link {
-    color: black;
+    color: #b100ff;
     text-decoration: none;
 }
 
@@ -67,7 +67,7 @@ a:visited {
 
 
 a:active {
-    color: black;
+    color: yellow;
 }
 
 @media (min-aspect-ratio: 16/9) {
