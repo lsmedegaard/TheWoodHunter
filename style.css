@@ -160,8 +160,10 @@ a:active {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 65%;
-    padding-top: 65px;
+    width: 100%;
+    height: 100%;
+
+
 
 }
 
@@ -171,11 +173,10 @@ a:active {
 
 }
 
-#kontaktSiden .section_wrapper {
+.section_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 2px;
-    padding-top: 15px;
 
 }
 
@@ -183,15 +184,15 @@ a:active {
 .kontaktFormSection {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    grid-gap: 2rem;
     align-items: start;
     padding: 1.5rem;
     background: #bfb79f;
     color: #000000;
-    border-radius: 8px;
-    margin-left: 80px;
-    margin-right: 80px;
     font-family: 'Cousine', monospace;
+
+
+
 
 }
 
