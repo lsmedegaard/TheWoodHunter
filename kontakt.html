@@ -32,49 +32,49 @@
 
     <main>
         <section id="kontaktSiden">
+            <div class="section_wrapper">
+                <div class="kontaktBillede">
+                    <img src="mikkel.jpg" alt="Mikkel" class="centerKontaktBillede">
+                </div>
 
-            <div class="kontaktAdresseTelefon">
-                <img src="mikkel.jpg" alt="Mikkel" class="centerKontaktBillede">
-                <article>
-                    <h2>Adresse: Drejervej 25, 2400 København
-                        // Telefon: +45 31 27 49 46</h2>
+                <div class="kontaktFormSection">
+                    <article>
+                        <h3>Send en mail til mig</h3>
+                        <p>Hvis du sidder inde med nogle spørgsmål, eller bare gerne vil komme i kontakt med mig, så er du meget velkommen til at sende en mail. Jeg glæder mig til at høre fra dig.</p>
+                        <h3>Adresse:</h3>
+                        <p>Drejervej 25, 2400 København</p>
+                        <h3>Telefon:</h3>
+                        <p>+45 31 27 49 46</p>
+                    </article>
 
-                </article>
-            </div>
+                    <!-- Form HTML -->
+                    <form action="tak.html" name="kontakt" netlify>
+                        <div class="formFelt">
+                            <label>
+                                Fulde navn
+                                <input placeholder="skriv dit navn her" type="text" name="fnavn" required>
+                            </label>
+                        </div>
 
-            <div class="kontaktFormSection">
-                <article>
-                    <h3>Send en mail til mig</h3>
-                    <p>Hvis du sidder inde med nogle spørgsmål, eller bare gerne vil komme i kontakt med mig, så er du meget velkommen til at sende en mail. Jeg glæder mig til at høre fra dig.</p>
-                </article>
-
-                <!-- Form HTML -->
-                <form action="tak.html" name="kontakt" netlify>
-                    <div class="formFelt">
-                        <label>
-                            Fulde navn
-                            <input placeholder="skriv dit navn her" type="text" name="fnavn" required>
-                        </label>
-                    </div>
-
-                    <div class="formFelt">
-                        <label>
-                            E-mail
-                            <input placeholder="indsæt din e-mail her" name="email" type="email" required>
-                        </label>
-                    </div>
+                        <div class="formFelt">
+                            <label>
+                                E-mail
+                                <input placeholder="indsæt din e-mail her" name="email" type="email" required>
+                            </label>
+                        </div>
 
 
-                    <div class="formFelt">
-                        <label>
-                            Skriv din besked her
-                            <textarea name="besked" rows="15" cols="30"></textarea>
-                        </label>
-                    </div>
+                        <div class="formFelt">
+                            <label>
+                                Skriv din besked her
+                                <textarea name="besked" rows="15" cols="30"></textarea>
+                            </label>
+                        </div>
 
-                    <button>Send</button>
-                </form>
+                        <button>Send</button>
+                    </form>
 
+                </div>
             </div>
         </section>
 
