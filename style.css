@@ -168,6 +168,8 @@ a:active {
 .kontaktAdresseTelefon {
     text-align: center;
     font-family: 'Cousine', monospace;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 
