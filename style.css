@@ -227,7 +227,6 @@ button {
     border-radius: 4px;
     background: #e5e2d8;
     color: #000000;
-    text-shadow: 0 0 6px rgb(0 0 0 / 40%);
     font-weight: 700;
     font-size: 1rem;
 }
