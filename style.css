@@ -20,7 +20,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    position: fixed;
+    position: sticky;
     top: 2vw;
     right: calc(50vw - 124px);
     z-index: 2;
@@ -30,6 +30,7 @@ body {
     display: inline-flex;
     flex-wrap: wrap;
     gap: 15px;
+
 }
 
 
@@ -142,4 +143,27 @@ a:active {
         background: url();
         background-size: cover;
     }
+}
+
+/** CSS For Kontakt-siden**/
+
+.kontaktFormSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    padding: 1.5rem;
+    background: #bfb79f;
+    color: #000000;
+    border-radius: 8px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+.kontaktAdresseTelefon {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+
 }
