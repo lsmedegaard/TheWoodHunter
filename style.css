@@ -190,15 +190,15 @@ a:active {
     background: #bfb79f;
     color: #000000;
     font-family: 'Cousine', monospace;
-
-
-
-
 }
 
 .kontaktFormSection article {
     padding-right: 2rem;
     border-right: 2px solid #000000;
+}
+
+.kontaktFormSection p {
+    line-height: 2;
 }
 
 .kontaktFormSection h3 {
@@ -223,7 +223,7 @@ label {
 input {
     display: block;
     font-size: 1.1rem;
-    padding: .5rem;
+    padding: 1.5rem;
     border-radius: 4px;
     border: 0;
 }
