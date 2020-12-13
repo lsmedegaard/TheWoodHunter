@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta name="robots" content="noindex">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>redesign</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cousine&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <div class="navWrapper">
+            <div id="frontText">
+                <h1>The Wood Hunter</h1>
+            </div>
+            <div class="nav">
+                <a href="produkter.html">PRODUKTER</a>
+                <a href="om.html">OM</a>
+                <a href="kontakt.html">KONTAKT</a>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section id="kontaktSiden">
+            <div class="section_wrapper">
+                <div class="kontaktBillede">
+                    <img src="mikkel.jpg" alt="Mikkel" class="centerKontaktBillede">
+                </div>
+
+                <div class="kontaktFormSection">
+                    <article>
+                        <h3>Adresse:</h3>
+                        <p>Drejervej 25, 2400 København</p>
+                        <h3>Telefon:</h3>
+                        <p>+45 31 27 49 46</p>
+                        <h3>Send en mail til mig</h3>
+                        <p>Hvis du sidder inde med nogle spørgsmål, eller bare gerne vil komme i kontakt med mig, så er du meget velkommen til at sende en mail. Jeg glæder mig til at høre fra dig.</p>
+
+                    </article>
+
+                    <!-- Form HTML -->
+                    <form action="tak.html" name="kontakt" netlify>
+                        <div class="formFelt">
+                            <label>
+                                Fulde navn
+                                <input placeholder="skriv dit navn her" type="text" name="fnavn" required>
+                            </label>
+                        </div>
+
+                        <div class="formFelt">
+                            <label>
+                                E-mail
+                                <input placeholder="indsæt din e-mail her" name="email" type="email" required>
+                            </label>
+                        </div>
+
+
+                        <div class="formFelt">
+                            <label>
+                                Skriv din besked her
+                                <textarea name="besked" rows="15" cols="34"></textarea>
+                            </label>
+                        </div>
+
+                        <button>Send</button>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+</body>
