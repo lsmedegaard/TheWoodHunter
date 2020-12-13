@@ -104,6 +104,11 @@ a:active {
 
 .lcol {
     display: flex;
+    /*
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+*/
     position: fixed;
     top: 29vw;
     left: 18vw;
@@ -113,6 +118,12 @@ a:active {
 
 .rcol {
     display: flex;
+
+    /*
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+*/
     position: fixed;
     top: 29vw;
     right: 18vw;
