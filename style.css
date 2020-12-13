@@ -12,7 +12,6 @@ body {
 
 #videoBG {
     position: fixed;
-    z-index: -1;
 
 }
 
@@ -32,7 +31,6 @@ body {
     flex-wrap: wrap;
     gap: 15px;
     font-family: 'Cousine', monospace;
-
 }
 
 
@@ -79,59 +77,22 @@ a:active {
     color: black;
 }
 
-.underlag {
-    background-color: #e5e4e0;
-    padding: 25.3vw;
-    margin-left: 12vw;
-    margin-right: 12vw;
-
+.contentWrapper {
+    border-radius: 5px;
+    background-color: #bfb79f;
+    width: 80vw;
+    margin: 0 auto;
 }
 
-.imgWrapper {
-    display: flex;
+.contentWrapper .imgWrapper {
+    border-radius: 5px;
+    margin: 10px auto 0;
+    padding-top: 15px;
+    width: 50vw;
+}
+
+.contentWrapper .imgWrapper img {
     width: 100%;
-    height: 100%;
-    top: -6vw;
-    position: fixed;
-    left: 1vw;
-    transform: scale(0.35);
-}
-
-.textWrapper {
-    display: grid;
-    position: fixed;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 34vw;
-    top: 26vw;
-    left: 21vw;
-}
-
-.lcol {
-    display: flex;
-    /*
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-*/
-    position: fixed;
-    top: 29vw;
-    left: 18vw;
-    width: 20vw;
-
-}
-
-.rcol {
-    display: flex;
-
-    /*
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-*/
-    position: fixed;
-    top: 29vw;
-    right: 18vw;
-    width: 20vw;
 }
 
 @media (min-aspect-ratio: 16/9) {
@@ -159,95 +120,114 @@ a:active {
     }
 }
 
-/** CSS For Kontakt-siden**/
+/* Om-siden start */
 
-#kontaktSiden {
-    background-color: #e5e2d8;
-    align-items: center;
-
+.aboutPage .contentWrapper .textWrapper {
+    display: flex;
+    justify-content: space-around;
 }
 
-.centerKontaktBillede {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: 100%;
-
-
-
+.aboutPage .contentWrapper .textWrapper div {
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    width: 45%;
+    margin: 20px 0;
+    padding: 0 15px;
 }
 
-.kontaktBillede {
+.aboutPage .contentWrapper .textWrapper h2 {
     text-align: center;
+}
+
+@media (max-width: 680px) {
+
+    .aboutPage .contentWrapper .textWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutPage .contentWrapper .textWrapper div {
+        width: 90%;
+    }
+}
+
+/* Om-siden slut */
+
+/*  Kontakt-siden start */
+
+.contactWrapper .contactMap {
+    width: 600px;
+}
+
+.contactWrapper {
+    display: flex;
     font-family: 'Cousine', monospace;
-
+    justify-content: space-around;
 }
 
-.section_wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2px;
-
+.contactWrapper>div {
+    width: 45%;
+    margin: 20px 0;
 }
 
-
-.kontaktFormSection {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem;
-    align-items: start;
-    padding: 1.5rem;
-    background: #bfb79f;
-    color: #000000;
-    font-family: 'Cousine', monospace;
+.contactWrapper .contactInformation {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    padding: 0 15px;
 }
 
-.kontaktFormSection article {
-    padding-right: 2rem;
-    border-right: 2px solid #000000;
-}
-
-.kontaktFormSection p {
+.contactWrapper p {
     line-height: 2;
 }
 
-.kontaktFormSection h3 {
-    font-style: bold;
-}
-
-
-.formFelt {
+.contactWrapper .formFelt {
     margin-bottom: 1rem;
 }
 
-.formFelt besked {
-    padding-right: 54px;
-}
-
-label {
-    display: grid;
-    justify-items: start;
+.contactWrapper label {
     font-weight: 600;
 }
 
-input {
+.contactWrapper input, textarea {
     display: block;
     font-size: 1.1rem;
     padding: 1.5rem;
     border-radius: 4px;
     border: 0;
+    width: 100%;
 }
 
-
-button {
+.contactWrapper button {
+    cursor: pointer;
     padding: .75rem 1rem;
-    margin-top: 1.1rem;
     border: 0;
     border-radius: 4px;
     background: #e5e2d8;
-    color: #000000;
     font-weight: 700;
     font-size: 1rem;
     font-family: 'Cousine', monospace;
+}
+
+.contactWrapper button:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 680px) {
+    .contactWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactWrapper>div {
+        width: 90%;
+    }
+}
+
+/* Kontakt-siden slut */
+
+
+@media (max-width: 680px) {
+    .contentWrapper .imgWrapper {
+        width: 90%;
+    }
 }
