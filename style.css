@@ -12,7 +12,6 @@ body {
 
 #videoBG {
     position: fixed;
-    z-index: -1;
 
 }
 
@@ -20,22 +19,22 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    position: fixed;
+    position: sticky;
     top: 2vw;
     right: calc(50vw - 124px);
     z-index: 2;
+
 }
 
 .nav {
     display: inline-flex;
     flex-wrap: wrap;
     gap: 15px;
+    font-family: 'Cousine', monospace;
 }
 
 
-#frontText {
-    text-align: center;
-}
+#frontText {}
 
 .overlay {
     height: 100vh;
@@ -46,12 +45,18 @@ body {
     z-index: 1;
     background: #ada281;
     opacity: 0.65;
+
 }
 
+/*
 .sectionWrapper {
-    display: flex;
-    justify-content: space-between;
+    width: 300px;
+    background: #e5e4e0;
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid rgb(184, 150, 96);
 }
+*/
 
 a:link {
     color: black;
@@ -70,6 +75,26 @@ a:visited {
 
 a:active {
     color: black;
+    <<<<<<< HEAD=======
+}
+
+.contentWrapper {
+    border-radius: 5px;
+    background-color: #bfb79f;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.contentWrapper .imgWrapper {
+    border-radius: 5px;
+    margin: 10px auto 0;
+    padding-top: 15px;
+    width: 50vw;
+}
+
+.contentWrapper .imgWrapper img {
+    width: 100%;
+    > > > > > > > origin/master
 }
 
 @media (min-aspect-ratio: 16/9) {
@@ -94,5 +119,180 @@ a:active {
     body {
         background: url();
         background-size: cover;
+    }
+}
+
+/* Om-siden start */
+
+.aboutPage .contentWrapper .textWrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.aboutPage .contentWrapper .textWrapper div {
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    width: 45%;
+    margin: 20px 0;
+    padding: 0 15px;
+}
+
+.aboutPage .contentWrapper .textWrapper h2 {
+    text-align: center;
+}
+
+@media (max-width: 680px) {
+
+    .aboutPage .contentWrapper .textWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutPage .contentWrapper .textWrapper div {
+        width: 90%;
+    }
+}
+
+/* Om-siden slut */
+
+/*  Kontakt-siden start */
+
+.contactWrapper .contactMap {
+    width: 600px;
+}
+
+.contactWrapper {
+    display: flex;
+    font-family: 'Cousine', monospace;
+    justify-content: space-around;
+}
+
+.contactWrapper > div {
+    width: 45%;
+    margin: 20px 0;
+}
+
+.contactWrapper .contactInformation {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    padding: 0 15px;
+}
+
+.contactWrapper p {
+    line-height: 2;
+}
+
+.contactWrapper .formFelt {
+    margin-bottom: 1rem;
+}
+
+.contactWrapper label {
+    font-weight: 600;
+}
+
+.contactWrapper input,
+textarea {
+    display: block;
+    font-size: 1.1rem;
+    padding: 1.5rem;
+    border-radius: 4px;
+    border: 0;
+    width: 100%;
+}
+
+.contactWrapper button {
+    cursor: pointer;
+    padding: .75rem 1rem;
+    border: 0;
+    border-radius: 4px;
+    background: #e5e2d8;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Cousine', monospace;
+}
+
+.contactWrapper button:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 680px) {
+    .contactWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactWrapper > div {
+        width: 90%;
+    }
+}
+
+/* Kontakt-siden slut */
+
+
+@media (max-width: 680px) {
+    .contentWrapper .imgWrapper {
+        width: 90%;
+    }
+}
+
+
+/*//produkter//*/
+/**/
+
+
+
+h2 {
+    display: flex;
+    justify-content: space-around;
+    /*font-family:*/
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+
+#produktSection .sectionWrapper1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 6rem;
+
+
+}
+
+#produktSection .sectionWrapper2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 5rem;
+
+
+}
+
+#produktSection .sectionWrapper3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+@media (max-width: 680px) {
+    body {
+        background-color: darkseagreen;
+    }
+
+    .produktSection .col {
+        flex-direction: column;
+        align-items: center;
     }
 }
