@@ -131,13 +131,13 @@ a:active {
     text-align: center;
 }
 
-.lasseRow {
+.Row {
     display: flex;
     justify-content: space-around;
     margin-top: 5vw;
 }
 
-.lasseRow>div {
+.Row>div {
     width: 45%;
 }
 
@@ -154,21 +154,21 @@ a:active {
 
 @media (max-width: 680px) {
 
-    .aboutPage .contentWrapper .textWrapper, .lasseRow {
+    .aboutPage .contentWrapper .textWrapper, .Row {
         flex-direction: column;
         align-items: center;
     }
 
-    .firstLasseRow>div:first-child {
+    .firstRow>div:first-child {
         order: 2;
         margin-top: 10px;
     }
 
-    .lasseRow>div {
+    .Row>div {
         width: 95%;
     }
 
-    .secondLasseRow>div:first-child {
+    .secondRow>div:first-child {
         margin-bottom: 10px;
     }
 
