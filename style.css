@@ -105,7 +105,7 @@ a:active {
         display: none;
     }
 
-    body {
+    #bgImg {
         background: url("3billeder/optimeretbg1.jpg");
         background-size: cover;
     }
