@@ -31,8 +31,13 @@ body {
     flex-wrap: wrap;
     gap: 15px;
     font-family: 'Cousine', monospace;
+    font-size: 20px;
 }
 
+.navWrapper h1 {
+    font-family: 'Langar', cursive;
+    font-size: 60px;
+}
 
 
 .overlay {
@@ -73,6 +78,8 @@ a:active {
     background-color: #bfb79f;
     width: 80vw;
     margin: 0 auto;
+    font-family: 'Cousine', monospace;
+
 }
 
 .contentWrapper .imgWrapper {
@@ -108,6 +115,7 @@ a:active {
     #bgImg {
         background: url("3billeder/optimeretbg1.jpg");
         background-size: cover;
+
     }
 }
 
@@ -118,7 +126,10 @@ a:active {
     justify-content: space-around;
     font-family: 'Cousine', monospace;
 
+
 }
+
+
 
 .aboutPage .contentWrapper .textWrapper div {
     border-radius: 5px;
@@ -138,7 +149,7 @@ a:active {
     margin-top: 5vw;
 }
 
-.Row>div {
+.Row > div {
     width: 45%;
 }
 
@@ -151,30 +162,39 @@ a:active {
     background: rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     padding: 0 20px;
+    font-family: 'Cousine', monospace;
 }
+
+
 
 @media (max-width: 680px) {
 
-    .aboutPage .contentWrapper .textWrapper, .Row {
+    .aboutPage .contentWrapper .textWrapper,
+    .Row {
         flex-direction: column;
         align-items: center;
     }
 
-    .firstRow>div:first-child {
+    .firstRow > div:first-child {
         order: 2;
         margin-top: 10px;
     }
 
-    .Row>div {
+    .Row > div {
         width: 95%;
     }
 
-    .secondRow>div:first-child {
+    .secondRow > div:first-child {
         margin-bottom: 10px;
     }
 
     .aboutPage .contentWrapper .textWrapper div {
         width: 90%;
+    }
+
+    .navWrapper h1 {
+        font-family: 'Langar', cursive;
+        font-size: 50px;
     }
 }
 
@@ -185,6 +205,8 @@ a:active {
 .contactWrapper .contactMap {
     width: 600px;
 }
+
+
 
 .contactWrapper {
     display: flex;
@@ -241,6 +263,7 @@ textarea {
     opacity: 0.9;
 }
 
+
 @media (max-width: 680px) {
     .contactWrapper {
         flex-direction: column;
@@ -270,7 +293,7 @@ textarea {
 h2 {
     display: flex;
     justify-content: space-around;
-    /*font-family:*/
+    font-family: 'Cousine', monospace;
 }
 
 img {
